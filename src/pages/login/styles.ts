@@ -18,9 +18,21 @@ export const Wrapper = styled.main`
         justify-content: center;
     }
 
-    & > nav > fieldset {
-        display: flex;
-        flex-direction: column;
+    & > nav > fieldset { 
         border: 0;
+    }
+
+    & > nav > fieldset > input {
+        margin-bottom: 32px;
+    }
+
+
+    & > nav > fieldset > div {
+        margin-top: 16px;
+        display: flex;
+    }
+
+    & > nav > fieldset > div > button:first-child {
+        margin-right: 16px;
     }
 `;

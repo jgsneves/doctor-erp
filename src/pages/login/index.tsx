@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button } from '../../components/button';
+import { Input } from '../../components/input';
 import {Wrapper} from './styles';
 
 export const Login = () => {
@@ -7,11 +8,12 @@ export const Login = () => {
         <Wrapper>
             <nav>
                 <fieldset>
-                    <Button theme="secondary">Cadastrar</Button>
-                    <h1>teste de font</h1>
-                    <Button theme="primary">Entrar</Button>
-                    <p>teste de fonte</p>
-                    <Button theme="danger">Perigo!</Button>
+                    <Input inputSize="large" id="email" title="E-mail" type="email"/>
+                    <Input inputSize="large" id="password" title="Senha" type="password"/>
+                    <div>
+                        <Button theme="primary">Entrar</Button>
+                        <Button theme="secondary">Cadastrar</Button>
+                    </div>
                 </fieldset>
             </nav>
         </Wrapper>

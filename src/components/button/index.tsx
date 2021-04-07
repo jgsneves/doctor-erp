@@ -7,7 +7,5 @@ interface IButtonProps extends React.HTMLProps<HTMLButtonElement> {
 }
 
 export const Button = ({theme, children}:IButtonProps) => {
-    return (
-        <ButtonWrapper theme={theme}>{children}</ButtonWrapper>
-    );
+    return <ButtonWrapper theme={theme}>{children}</ButtonWrapper>;
 }
