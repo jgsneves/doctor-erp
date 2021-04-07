@@ -1,0 +1,37 @@
+{
+    "doctors": [
+        {
+            "id": 1,
+            "name": "Marcelo Gusmão",
+            "email": "marcelo@doctorerp.com.br",
+            "password": 12345
+        }
+    ],
+    "clients": [
+        {
+            "id": 1,
+            "name": "José da Silva",
+            "CPF": "034.109.543-53",
+            "genre": "Masculino",
+            "birthday": "01/01/1950",
+            "created_by": "Marcelo Gusmão",
+            "changed_by": "Marcelo Gusmão"
+        }
+    ],
+    "medical-record": [
+        {
+            "id": 1,
+            "client_name": "José da Silva",
+            "doctor_name": "Marcelo Gusmão",
+            "exams": [1]
+        }
+    ],
+    "exams": [
+        {
+            "id": 1,
+            "date": "01/01/2020",
+            "description": "o exame das vibrações percebidas pela mão do examinador, encostada na parede torácica, quando o paciente emite algum som. Procedimento: Antes e após examinar um paciente lave as mãos. O examinador deve se colocar atrás do paciente.",
+            "created-by":"Marcelo Gusmão"
+        }
+    ]
+}
