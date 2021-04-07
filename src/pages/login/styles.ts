@@ -21,5 +21,6 @@ export const Wrapper = styled.main`
     & > nav > fieldset {
         display: flex;
         flex-direction: column;
+        border: 0;
     }
 `;

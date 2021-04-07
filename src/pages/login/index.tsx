@@ -1,4 +1,5 @@
 import React from 'react';
+import { Button } from '../../components/button';
 import {Wrapper} from './styles';
 
 export const Login = () => {
@@ -6,10 +7,11 @@ export const Login = () => {
         <Wrapper>
             <nav>
                 <fieldset>
-                    <input type="text"/>
-                    <input type="password"/>
-                    <button>Entrar</button>
-                    <button>Cadastrar</button>
+                    <Button theme="secondary">Cadastrar</Button>
+                    <h1>teste de font</h1>
+                    <Button theme="primary">Entrar</Button>
+                    <p>teste de fonte</p>
+                    <Button theme="danger">Perigo!</Button>
                 </fieldset>
             </nav>
         </Wrapper>
