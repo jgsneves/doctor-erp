@@ -42,3 +42,22 @@ export const SignUpForm = styled.form`
         justify-content: space-evenly;
     }
 `;
+
+export const ErrorMessage = styled.p`
+    background-color: #F5EDEB;
+    border-style: solid;
+    border-color: #E44131;
+    border-width: 1px 1px 1px 7px;
+    border-radius: 3px;
+    height: 50px;
+    color: #ED4433;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 500px;
+    
+    & > svg {
+        margin-right: 5px;
+    }
+`;

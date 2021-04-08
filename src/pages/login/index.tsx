@@ -1,13 +1,20 @@
 import React, { FormEvent } from 'react';
 import { Button } from '../../components/button';
 import { Input } from '../../components/input';
-import {LoginForm, SignUpForm, Wrapper} from './styles';
+import {FiAlertTriangle} from 'react-icons/fi';
+import {ErrorMessage, LoginForm, SignUpForm, Wrapper} from './styles';
 
 export const Login = () => {
     const [stage, setStage] = React.useState(0);
+    const [error, setError] = React.useState({code: 0, message: "Sem erro."});
     
     function loginSubmit(e: FormEvent) {
         e.preventDefault();
+        try {
+
+        } catch (error) {
+            
+        }
     }
 
     function signUpSubmit(e: FormEvent) {
@@ -25,6 +32,12 @@ export const Login = () => {
 
     return (
         <Wrapper>
+            {error.code === 0 ? null : (
+                <ErrorMessage>
+                    <FiAlertTriangle />
+                    {error.message}
+                </ErrorMessage>
+            )}
             {stage === 0 ? (
                 <LoginForm onSubmit={loginSubmit}>
                     <p><b>E-mail</b></p>
