@@ -7,32 +7,38 @@ export const Wrapper = styled.main`
     width: 100vw;
     height: 100vh;
 
-    & > nav {
-        background-color: #FFF;
-        height: 100vh;
-        width: 20%;
-        position: fixed;
-        right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+`;
+
+export const LoginForm = styled.form`
+    background-color: #FFF;
+    padding: 16px 32px;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 25px 45px 25px 45px 50px;
+
+    & > div {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-evenly;
     }
+`;
 
-    & > nav > fieldset { 
-        border: 0;
-    }
+export const SignUpForm = styled.form`
+    background-color: #FFF;
+    padding: 16px 32px;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 25px 45px 25px 45px 25px 45px 50px;
 
-    & > nav > fieldset > input {
-        margin-bottom: 32px;
-    }
-
-
-    & > nav > fieldset > div {
-        margin-top: 16px;
+    & > div {
         display: flex;
-    }
-
-    & > nav > fieldset > div > button:first-child {
-        margin-right: 16px;
+        align-items: center;
+        justify-content: space-evenly;
     }
 `;

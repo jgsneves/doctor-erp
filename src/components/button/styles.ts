@@ -15,10 +15,19 @@ export const ButtonWrapper = styled.button<IProps>`
         }
     }};
     width: fit-content;
+    height: fit-content;
     border-radius: 4px;
     display: flex;
     align-items: center;
-    border: ${props => props.theme === "secondary" ? "2px solid #000" : "0"};
+    border: ${props => {
+        if (props.theme === "secondary") {
+            return "2px solid #000";
+        } else if (props.theme === "primary") {
+            return "2px solid #6071F7"
+        } else if (props.theme === "danger") {
+            return "2px solid #ED4433"
+        }
+    }};
     color: ${props => props.theme === "secondary" ? "#000" : "#FFF"};
     padding: 8px 16px;
     font-style: bold;

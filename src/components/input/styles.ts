@@ -4,13 +4,6 @@ interface IPropsInput {
     inputSize: "large" | "medium";
 }
 
-export const Label = styled.label`
-    & > p {
-        margin-bottom: 8px;
-        font-weight: 500;
-    }
-`;
-
 export const InputWrapper = styled.input<IPropsInput>`
     width: ${props => props.inputSize === "large" ? "250px" : "100px"};
     border-radius: 4px;
