@@ -6,13 +6,14 @@ interface IPropsInput extends React.HTMLProps<HTMLInputElement> {
     id: string;
 }
 
-export const Input = ({inputSize, id, type}:IPropsInput) => {
+export const Input = ({inputSize, id, type, onChange}:IPropsInput) => {
     return (
         <label htmlFor={id}>
             <InputWrapper 
                 id={id} 
                 inputSize={inputSize}
-                type={type}    
+                type={type}
+                onChange={onChange}
             />
         </label>
     );

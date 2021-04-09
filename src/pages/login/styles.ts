@@ -11,6 +11,18 @@ export const Wrapper = styled.main`
     justify-content: center;
     align-items: center;
     height: 100vh;
+
+    & > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #FFF;
+        padding: 32px 32px;
+        border-radius: 8px;
+        width: 314px;
+        height: 222px;
+    }
 `;
 
 export const LoginForm = styled.form`
@@ -19,7 +31,7 @@ export const LoginForm = styled.form`
     border-radius: 8px;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 25px 45px 25px 45px 50px;
+    grid-template-rows: 50px 25px 45px 25px 45px 50px;
 
     & > div {
         display: flex;
@@ -34,7 +46,7 @@ export const SignUpForm = styled.form`
     border-radius: 8px;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 25px 45px 25px 45px 25px 45px 50px;
+    grid-template-rows: 50px 25px 45px 25px 45px 25px 45px 50px;
 
     & > div {
         display: flex;
@@ -55,7 +67,7 @@ export const ErrorMessage = styled.p`
     display: flex;
     align-items: center;
     position: fixed;
-    top: 500px;
+    top: 650px;
     
     & > svg {
         margin-right: 5px;

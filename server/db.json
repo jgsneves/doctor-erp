@@ -4,7 +4,7 @@
             "id": 1,
             "name": "Marcelo Gusmão",
             "email": "marcelo@doctorerp.com.br",
-            "password": 12345
+            "password": "12345"
         }
     ],
     "clients": [
